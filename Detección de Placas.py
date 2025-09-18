@@ -51,7 +51,7 @@ mpl.axis("off")
 
 mpl.show()
 
-# OCR con PSM 8 (una palabra)
+# OCR con PSM 8
 text = pytesseract.image_to_string(thresh_final, config=r'--oem 3 --psm 8 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
 print(f"\nTexto detectado: '{text.strip()}'")
